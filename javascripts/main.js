@@ -1,17 +1,31 @@
 (function () {
   'use strict';
-  var app = angular.module('profile',[]);
+  var app = angular.module('profile',['ngRoute']);
+  app.config(function($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl : 'partials/home.html',
+        controller : 'AppCtrl'
+      })
+      .when('/projects', {
+        templateUrl : 'partials/projects.html',
+        controller: 'ProjectsCtrl'
+      })
+      .when('/experience', {
+        templateUrl : 'partials/experience.html',
+        controller : 'AppCtrl'
+      })
+  });
   app.controller('AppCtrl', function ($scope) {
-    $scope.test = "resume.html";
     var tabs = [{
         title: "Home",
-        url: "partials/home.html"
+        url: "/"
       }, {
         title: "Projects",
-        url: "partials/projects.html"
+        url: "/projects"
       }, {
         title: "Technical Experience",
-        url: "partials/experience.html"
+        url: "/experience"
       }
     ];
     $scope.tabs = tabs;

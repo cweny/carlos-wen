@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <!--link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
@@ -24,19 +25,20 @@
         <h2></h2>
 
         <section id="links">
-          <a href="#" ng-repeat="tab in tabs" ng-click="onClick(tab)" class="btn">{{tab.title}}</a>
+          <a href="{{tab.url}}" ng-repeat="tab in tabs" class="btn">{{tab.title}}</a>
         </section>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-        <div ng-include="selectedUrl"></div>
+        <div ng-view></div>
       </section>
     </div>
 
     
     <footer>
+      
       <div>
         <a href="https://github.com/cweny"><img src="images/blacktocat.png"></a>
       </div>
