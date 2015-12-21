@@ -248,3 +248,14 @@ a {
 .cf {
   zoom:1;
 }
+
+footer img {
+  width:34px;
+  height:34px;
+}
+
+footer {
+  text-align:center;
+  margin-top:50px;
+  margin-bottom:50px;
+}
