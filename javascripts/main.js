@@ -19,13 +19,13 @@
   app.controller('AppCtrl', function ($scope) {
     var tabs = [{
         title: "Home",
-        url: "/"
+        url: "#/"
       }, {
         title: "Projects",
-        url: "/projects"
+        url: "#/projects"
       }, {
         title: "Technical Experience",
-        url: "/experience"
+        url: "#/experience"
       }
     ];
     $scope.tabs = tabs;
