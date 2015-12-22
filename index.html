@@ -25,7 +25,10 @@
         <h2></h2>
 
         <section id="links">
-          <a href="{{tab.url}}" ng-repeat="tab in tabs" class="btn">{{tab.title}}</a>
+          <ul class="nav nav-pills">
+            <li ng-repeat="tab in tabs"><a href="{{tab.url}}">{{tab.title}}</a></li>
+          </ul>
+          <!--<a href="{{tab.url}}" ng-repeat="tab in tabs" class="btn">{{tab.title}}</a>-->
         </section>
       </div>
     </header>
