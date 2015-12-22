@@ -215,14 +215,10 @@ hr {
 .nav-pills a {
   background: -webkit-linear-gradient(top, rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
-  color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   border-right: 1px solid rgba(0, 0, 0, 0.7);
 }
 
-.nav-pills li:hover {
-  background:black;
-}
 
 .btn-small {
   display: inline-block;
