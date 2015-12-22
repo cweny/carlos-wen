@@ -1,15 +1,12 @@
-<!--div ng-repeat="project in projects">
-    <a href="{{project.url}}">{{project.title}}</a>
-</div-->
-<div class="timeline">
-    <div class="left-content">
+<div class="row timeline">
+    <div class="col-md-6 left-content">
         <p ng-repeat="project in projects" ng-if="$odd">
-            <a class="timeline-el" href="{{project.url}}">{{project.title}}</a>
+            <a bs-tooltip title="{{project.time}}" data-placement="left" class="timeline-el" href="{{project.url}}">{{project.title}}</a>
         </p>
     </div>
-    <div class="right-content">
+    <div class="col-md-6 right-content">
         <p ng-repeat="project in projects" ng-if="$even">
-            <a class="timeline-el" href="{{project.url}}">{{project.title}}</a>
+            <a bs-tooltip title="{{project.time}}" data-placement="right" class="timeline-el" href="{{project.url}}">{{project.title}}</a>
         </p>
     </div>
 </div>
