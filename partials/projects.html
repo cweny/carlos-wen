@@ -4,12 +4,12 @@
 <div class="timeline">
     <div class="left-content">
         <p ng-repeat="project in projects" ng-if="$odd">
-            <a href="{{project.url}}">{{project.title}}</a>
+            <a class="timeline-el" href="{{project.url}}">{{project.title}}</a>
         </p>
     </div>
     <div class="right-content">
         <p ng-repeat="project in projects" ng-if="$even">
-            <a href="{{project.url}}">{{project.title}}</a>
+            <a class="timeline-el" href="{{project.url}}">{{project.title}}</a>
         </p>
     </div>
 </div>
