@@ -1,0 +1,81 @@
+[  
+   {  
+      "title":"Message REST Web Service",
+      "url":"#/projects/message",
+      "time":"August 2015",
+      "description":[  
+         "REST web service with JAX-RS and JDBC to manage messages in a database"
+      ],
+      "type":"Personal Project",
+      "accomplishments":[  
+         "Developed a REST web service with JAX-RS and JDBC to manage messages in a database",
+         "Supported CRUD operations in a MySQL database with http methods: GET, POST, PUT, DELETE",
+         "Utilized Postman extension in Google Chrome to test the API"
+      ]
+   },
+   {  
+      "title":"Connect 4",
+      "url":"#/projects/connect4",
+      "time":"December 2014",
+      "description":[  
+         "Connect 4 Game with artificial intelligence",
+         "Available at: http://cweny.github.io/Connect4"
+      ],
+      "type":"Personal Project",
+      "accomplishments":[  
+
+      ]
+   },
+   {  
+      "title":"MozStumbler",
+      "url":"#/projects/mozstumbler",
+      "time":"October 2014",
+      "description":[  
+         "Android widget application to turn on and off the MozStumbler scanning function"
+      ],
+      "type":"University Project",
+      "accomplishments":[  
+         "Created an Android widget application to turn on and off the MozStumbler scanning function to improve usability",
+         "Implemented an unsupported toggle button for the android widget"
+      ]
+   },
+   {  
+      "title":"QR Code App",
+      "url":"#/projects/qr",
+      "time":"June 2014",
+      "description":[  
+         "Android application capable of storing data and displaying it as a QR code"
+      ],
+      "type":"Personal Project",
+      "accomplishments":[  
+         "Developed an Android application capable of storing data and displaying it as a QR code resulting in greater knowledge of mobile app development",
+         "Utilized SQLite to store, retrieve, and manage data",
+         "Researched about Android development practices and QR code generation to create a functional application"
+      ]
+   },
+   {  
+      "title":"Electromagnetic Tether Robot",
+      "url":"#/projects/robot",
+      "time":"February 2014",
+      "description":[  
+         "Autonomous robot capable of following an electromagnetic beacon and receiving data from electromagnetic signals"
+      ],
+      "type":"University Project",
+      "accomplishments":[  
+         "Designed, built and tested an autonomous robot capable of following an electromagnetic beacon and receiving data from electromagnetic signals",
+         "Programmed a microcontroller in C to process voltages and control two electric motors according to these values"
+      ]
+   },
+   {  
+      "title":"Others",
+      "url":"#/projects/others",
+      "time":"December 2013",
+      "description":[  
+         "More personal projects"
+      ],
+      "type":"Personal Project",
+      "accomplishments":[  
+
+      ]
+   }
+]
