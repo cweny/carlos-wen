@@ -25,7 +25,7 @@
       "github": true,
       "github_url": "https://github.com/cweny/Connect4",
       "accomplishments":[  
-
+         "Implemented negamax and alpha beta pruning algorithms to find the next nearly optimal move in Connect 4 game"
       ]
    },
    {  
