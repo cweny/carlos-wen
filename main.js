@@ -11,9 +11,9 @@
         templateUrl : 'partials/projects.html',
         controller: 'ProjectsCtrl'
       })
-      .when('/projects/:project_name', {
-        templateUrl : function(params) { return "partials/projects/" + params.project_name + ".html"},
-        controller : 'ProjectsCtrl'
+      .when('/projects/:project_id', {
+        templateUrl : 'partials/projects/project.html',
+        controller : 'ProjectCtrl'
       })
       .when('/experience', {
         templateUrl : 'partials/experience.html',

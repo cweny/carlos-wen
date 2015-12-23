@@ -1,0 +1,34 @@
+<div ng-show="!project.sub_projects">
+    <div>
+        <h3>
+            {{project.title}}
+            <a ng-show="project.github" href="{{project.github_url}}" class="pull-right btn-small btn-github"><span class="icon"></span>View on GitHub</a>
+        </h3>
+    </div>
+    <p ng-repeat="desc in project.description">
+        {{desc}}
+    </p>
+    <ul>
+        <li ng-repeat="acc in project.accomplishments">{{acc}}</li>
+    </ul>
+</div>
+
+<div ng-show="project.sub_projects" ng-repeat="sub_project in project.sub_projects">
+    <div>
+        <h3>
+            {{sub_project.title}}
+            <a ng-show="sub_project.github" href="{{sub_project.github_url}}" class="pull-right btn-small btn-github"><span class="icon"></span>View on GitHub</a>
+        </h3>
+    </div>
+    <p ng-repeat="desc in sub_project.description">
+        {{desc}}
+    </p>
+    <ul>
+        <li ng-repeat="acc in sub_project.accomplishments">{{acc}}</li>
+    </ul>
+</div>
+<br/>
+
+<div>
+    <a href="#/projects">&lt Back</a>
+</div>
