@@ -18,8 +18,8 @@
       "title":"Connect 4",
       "time":"December 2014",
       "description":[  
-         "Connect 4 Game with artificial intelligence",
-         "Available at: http://cweny.github.io/Connect4"
+         "Connect 4 Game with artificial intelligence. The AI was programmed as a negamax search tree with alpha beta pruning.",
+         "Try it <a href=\"http://cweny.github.io/Connect4\">here!</a>" 
       ],
       "type":"Personal Project",
       "github": true,
