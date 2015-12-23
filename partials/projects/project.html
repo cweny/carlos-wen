@@ -5,9 +5,7 @@
             <a ng-show="project.github" href="{{project.github_url}}" class="pull-right btn-small btn-github"><span class="icon"></span>View on GitHub</a>
         </h3>
     </div>
-    <p ng-repeat="desc in project.description" ng-bind-html="desc">
-        
-    </p>
+    <p ng-repeat="desc in project.description" ng-bind-html="desc"></p>
     <ul>
         <li ng-repeat="acc in project.accomplishments">{{acc}}</li>
     </ul>
