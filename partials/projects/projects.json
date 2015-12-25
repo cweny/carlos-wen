@@ -4,6 +4,8 @@
       "time":"December 2015",
       "description":["This Website"],
       "type":"Personal Project",
+      "images":[
+      ],
       "github":true,
       "github_url":"https://github.com/cweny/carlos-wen",
       "accomplishments":[
@@ -17,6 +19,7 @@
          "REST web service with JAX-RS and JDBC to manage messages in a database"
       ],
       "type":"Personal Project",
+      "images":[],
       "github": true,
       "github_url": "https://github.com/cweny/InstMsg",
       "accomplishments":[  
@@ -29,10 +32,15 @@
       "title":"Connect 4",
       "time":"December 2014",
       "description":[  
-         "Connect 4 Game with artificial intelligence. The AI was programmed as a negamax search tree with alpha beta pruning.",
-         "Try it <a href=\"http://cweny.github.io/Connect4\">here!</a>" 
+         "Connect 4 Game with artificial intelligence. The AI was programmed as a negamax search tree with alpha beta pruning."
       ],
+      "live_url":"http://cweny.github.io/Connect4",
       "type":"Personal Project",
+      "images":[
+         {"image":"https://i.imgur.com/29ubxze.png?1"},
+         {"image":"https://i.imgur.com/Nyn5j5K.png?1"},
+         {"image":"https://i.imgur.com/rCxvjUQ.png?1"}
+      ],
       "github": true,
       "github_url": "https://github.com/cweny/Connect4",
       "accomplishments":[  
@@ -46,6 +54,10 @@
          "Android widget application to turn on and off the MozStumbler scanning function"
       ],
       "type":"University Project",
+      "images":[
+         {"image":"https://i.imgur.com/HKl5MR8.png?1"},
+         {"image":"https://i.imgur.com/BpkdRec.png?1"}
+      ],
       "github": false,
       "github_url": "",
       "accomplishments":[  
@@ -60,6 +72,16 @@
          "Android application capable of storing data and displaying it as a QR code"
       ],
       "type":"Personal Project",
+      "images":[
+         {"image":"https://i.imgur.com/rMgCMLt.png"},
+         {"image":"https://i.imgur.com/VvteQgL.png"},
+         {"image":"https://i.imgur.com/lzHHKaS.png"},
+         {"image":"https://i.imgur.com/rMgCMLt.png"},
+         {"image":"https://i.imgur.com/Y5KP5xe.png"},
+         {"image":"https://i.imgur.com/WIHP5Tg.png"},
+         {"image":"https://i.imgur.com/cMBLZp0.png"},
+         {"image":"https://i.imgur.com/XIa7ZC3.png"}
+      ],
       "github": false,
       "github_url": "",
       "accomplishments":[  
@@ -75,6 +97,10 @@
          "Autonomous robot capable of following an electromagnetic beacon and receiving data from electromagnetic signals"
       ],
       "type":"University Project",
+      "images":[
+         {"image":"images/blacktocat.png"},
+         {"image":"images/blacktocat.png"}
+      ],
       "github": false,
       "github_url": "",
       "accomplishments":[  
@@ -89,17 +115,31 @@
          "More personal projects"
       ],
       "type":"Personal Project",
+      "images":[],
       "sub_projects": [
          {
-         "title": "Tic Tac Toe Game",
-         "github": true,
-         "github_url": "https://github.com/cweny/Projects/blob/master/tictactoe/main.cpp",
-         "accomplishments":["Implemented with minimax algorithm"]
-         }, {
          "title": "Snake Game",
+         "images":[
+            {"image":"https://i.imgur.com/ndKOGLF.png?1"},
+            {"image":"https://i.imgur.com/isGwGNp.png?1"},
+            {"image":"https://i.imgur.com/pdbEL2M.png?1"},
+            {"image":"https://i.imgur.com/30ckPei.png?1"}
+         ],
          "github": true,
          "github_url": "https://github.com/cweny/Projects/blob/master/SnakeGame/main.cpp",
          "accomplishments":["Developed with OpenGL"]
+         },
+         {
+         "title": "Tic Tac Toe Game",
+         "images":[
+            {"image":"https://i.imgur.com/VEOaoAJ.png?1"},
+            {"image":"https://i.imgur.com/CSgaUL2.png?1"},
+            {"image":"https://i.imgur.com/tqBPHrG.png?1"},
+            {"image":"https://i.imgur.com/FwmWgXp.png?1"}
+         ],
+         "github": true,
+         "github_url": "https://github.com/cweny/Projects/blob/master/tictactoe/main.cpp",
+         "accomplishments":["Implemented with minimax algorithm"]
          }
          
       ]

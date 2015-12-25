@@ -5,10 +5,26 @@
             <a ng-show="project.github" href="{{project.github_url}}" class="pull-right btn-small btn-github"><span class="icon"></span>View on GitHub</a>
         </h3>
     </div>
-    <p ng-repeat="desc in project.description" ng-bind-html="desc"></p>
-    <ul>
-        <li ng-repeat="acc in project.accomplishments">{{acc}}</li>
-    </ul>
+    <div class="row">
+        <div ng-class="(project.hasImages()) ? 'col-md-6' : 'col-md-12'">
+            <p ng-repeat="desc in project.description">
+                {{desc}}
+            </p>
+            <p ng-show="project.live_url">Try it <a href="{{project.live_url}}" >here!</a></p>
+            <ul>
+                <li ng-repeat="acc in project.accomplishments">{{acc}}</li>
+            </ul>
+        </div>
+        <div ng-show="project.hasImages()" class="col-md-6" >
+          <div style="height: 305px">
+            <uib-carousel interval="2000" no-wrap="false">
+              <uib-slide ng-repeat="slide in project.images" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+              </uib-slide>
+            </uib-carousel>
+          </div>
+        </div>
+    </div>
 </div>
 
 <div ng-show="project.sub_projects" ng-repeat="sub_project in project.sub_projects">
@@ -18,15 +34,37 @@
             <a ng-show="sub_project.github" href="{{sub_project.github_url}}" class="pull-right btn-small btn-github"><span class="icon"></span>View on GitHub</a>
         </h3>
     </div>
-    <p ng-repeat="desc in sub_project.description">
-        {{desc}}
-    </p>
-    <ul>
-        <li ng-repeat="acc in sub_project.accomplishments">{{acc}}</li>
-    </ul>
+    
+    
+    
+    <div class="row">
+        <div ng-class="(sub_project.hasImages()) ? 'col-md-6' : 'col-md-12'">
+            <p ng-repeat="desc in sub_project.description">
+                {{desc}}
+            </p>
+            <ul>
+                <li ng-repeat="acc in sub_project.accomplishments">{{acc}}</li>
+            </ul>
+        </div>
+    
+    
+        <div ng-show="sub_project.hasImages()" class="col-md-6">
+            <div style="height: 305px">
+                <uib-carousel interval="2000" no-wrap="false">
+                  <uib-slide ng-repeat="slide in sub_project.images" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                  </uib-slide>
+                </uib-carousel>
+            </div>
+        </div>
+    </div>
+    
+    
 </div>
+
 <br/>
 
 <div>
     <a href="#/projects">&lt Back</a>
 </div>
+
