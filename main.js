@@ -10,20 +10,10 @@
       .when('/projects', {
         templateUrl : 'partials/projects.html',
         controller: 'ProjectsCtrl'
-        // resolve : {
-        //   'projectsSrv' : function(projectsSrv) {
-        //     return projectsSrv.promise;
-        //   }
-        // }
       })
       .when('/projects/:project_id', {
         templateUrl : 'partials/projects/project.html',
         controller : 'ProjectCtrl'
-        // resolve : {
-        //   'projectsSrv' : function(projectsSrv) {
-        //     return projectsSrv.promise;
-        //   }
-        // }
       })
       .when('/experience', {
         templateUrl : 'partials/experience.html',
