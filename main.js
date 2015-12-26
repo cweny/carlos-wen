@@ -47,5 +47,8 @@
     $scope.onClick = function(tab) {
       $scope.selectedUrl = tab.url;
     }
+    $scope.$on('$routeChangeSuccess', function () {
+      window.scrollTo(0, 0);
+    });
   });
 })();

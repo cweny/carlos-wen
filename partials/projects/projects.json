@@ -2,7 +2,11 @@
    {
       "title":"Personal Website",
       "time":"December 2015",
-      "description":["This Website"],
+      "description":[
+         "Used AngularJS as the development framework to build a single-page application. The code for this website is all client side and is being hosted on GitHub. I created an angular service that fetches data from a json file. This json file is hosted in the same place as the website itself. This saved me the work of needing a backend. I decided it was not really necessary because I am not planning to have too much data in here.",
+         "The website is a basic angular application. I used a few libraries for some of the UI, including bootstrap and angular-ui. I tried to make the URIs RESTful. \"/projects\" will show all projects, and \"/projects/id\" will show the project with the specified id"
+      ],
+      "summary":"This Website!",
       "type":"Personal Project",
       "images":[
       ],
@@ -16,8 +20,9 @@
       "title":"Message REST Web Service",
       "time":"August 2015",
       "description":[  
-         "REST web service with JAX-RS and JDBC to manage messages in a database"
+         "This project is just a very simple Java code that has a REST interface for messages in a database. I was new to RESTful webservices, so I decided to try creating one. This webservice is most likely a level 2 in the Richardson Maturity Model. I used different URIs for every resource to comply with level 1 and I made use of the HTTP verbs PUT, POST, GET, DELETE to comply with level 2. However, I did not use HATEOAS, so it is not level 3 compliant."
       ],
+      "summary":"REST web service with JAX-RS and JDBC to manage messages in a database",
       "type":"Personal Project",
       "images":[],
       "github": true,
@@ -32,8 +37,11 @@
       "title":"Connect 4",
       "time":"December 2014",
       "description":[  
-         "Connect 4 Game with artificial intelligence. The AI was programmed as a negamax search tree with alpha beta pruning."
+         "This game was written in javascript and its main feature is the AI. The AI uses negamax, which is a variant of the misnimax algorithm. Minimax is a backtracking algorithm that can be used in many two player board games. The basic idea of minimax is to search for a player's largest value that the player can be sure to get without knowing the other player's actions. It guesses the other player's move by getting the largest value for that player. In a way, the best option for one player can be interpreted as the worst option for the opponent.",
+         "The complexity is exponential because at every recursive step, it tries to evaluate every possible move. The main optimization I used is alpha-beta pruning, where some moves are pruned because they will not give an optimal result mathematically. Similar to how human players discard the possibility of a move because they know that it will not be the best.",
+         "The AI will not try to evaluate the entire set of possible moves. It will look all combinations for 5 moves ahead of the current state of the game, and evaluate all possible outcomes. The evaluate function gives a value for that state of the board. The more straight lines it has, the larger the result."
       ],
+      "summary":"Connect 4 Game with artificial intelligence. The AI was programmed as a negamax search tree with alpha beta pruning.",
       "live_url":"http://cweny.github.io/Connect4",
       "type":"Personal Project",
       "images":[
@@ -51,8 +59,9 @@
       "title":"MozStumbler",
       "time":"October 2014",
       "description":[  
-         "Android widget application to turn on and off the MozStumbler scanning function"
+         "For this project I worked in a group of three to create the widget. The user will be able to add the widget in the home screen and it will display the number of WiFi access points and cell towers it sees. The app had services to turn on and off the scanning function, so we only needed to make the widget use that service. The toggle button is an image with a click listener."
       ],
+      "summary":"Android widget application to turn on and off the MozStumbler scanning function",
       "type":"University Project",
       "images":[
          {"image":"https://i.imgur.com/HKl5MR8.png?1"},
@@ -69,8 +78,9 @@
       "title":"QR Code App",
       "time":"June 2014",
       "description":[  
-         "Android application capable of storing data and displaying it as a QR code"
+         "This is a very simple Android application where the user can store and manage data and represent it as a QR code. The user can select one piece of data and display it as QR code. The idea was to make it simple for users to send and receive information, like addresses, emails or cellphone information."
       ],
+      "summary":"Android application capable of storing data and displaying it as a QR code",
       "type":"Personal Project",
       "images":[
          {"image":"https://i.imgur.com/rMgCMLt.png"},
@@ -94,8 +104,9 @@
       "title":"Electromagnetic Tether Robot",
       "time":"February 2014",
       "description":[  
-         "Autonomous robot capable of following an electromagnetic beacon and receiving data from electromagnetic signals"
+         "For this project, I worked in a group of 5 students. The project consisted of the robot itself and the beacon. The beacon had two big inductors that produced electromagnetic signals. The robot had inductors that received these signals and produced a voltage. The closer the beacon was to the robot, the higher this voltage becomes. With the two inductors, the robot could process the two voltages and determine which directon the beacon was and how close. With these, we added some logic in the robot's microcontroller to move the motors accordingly."
       ],
+      "summary":"Autonomous robot capable of following an electromagnetic beacon and receiving data from electromagnetic signals",
       "type":"University Project",
       "images":[
       ],
@@ -112,6 +123,7 @@
       "description":[  
          "More personal projects"
       ],
+      "summary":"More personal projects",
       "type":"Personal Project",
       "images":[],
       "sub_projects": [
@@ -122,6 +134,9 @@
             {"image":"https://i.imgur.com/isGwGNp.png?1"},
             {"image":"https://i.imgur.com/pdbEL2M.png?1"},
             {"image":"https://i.imgur.com/30ckPei.png?1"}
+         ],
+         "description": [
+            "This snake game was one of my first programming projects. It uses openGL for the graphs, which are very simple. The snake and the board are drawn in 3D space. At the code level, the board is stored in a 2D array and the snake is a queue. I implemented the queue myself with a circular array."
          ],
          "github": true,
          "github_url": "https://github.com/cweny/Projects/blob/master/SnakeGame/main.cpp",
@@ -134,6 +149,9 @@
             {"image":"https://i.imgur.com/CSgaUL2.png?1"},
             {"image":"https://i.imgur.com/tqBPHrG.png?1"},
             {"image":"https://i.imgur.com/FwmWgXp.png?1"}
+         ],
+         "description": [
+            "This game uses a recursive minimax algorithm to calculcate the best move. The algorithm tries to predict all the possible moves that can follow after. Every time it tries to predict, it assumes the player picks the best move for him and the worst move for the computer. This game was the first time I learned about the minimax algorithm. It has no optimizations because it does not need it. Since the board is a 3x3 board, all possible combinations or plays are at most 9!, which is not very big. The recursive algorithm goes at most 9 steps deep since there are at most 9 plays, so a stack overflow is not possible either."
          ],
          "github": true,
          "github_url": "https://github.com/cweny/Projects/blob/master/tictactoe/main.cpp",
