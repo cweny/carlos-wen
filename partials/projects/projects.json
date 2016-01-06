@@ -13,12 +13,12 @@
       "github":true,
       "github_url":"https://github.com/cweny/carlos-wen",
       "accomplishments":[
-         "Created a single page app with angular js"
+         "Created a single page app with AngularJS"
       ]
    },
    {  
       "title":"Message REST Web Service",
-      "time":"August 2015",
+      "time":"May 2015",
       "description":[  
          "This project is just a very simple Java code that has a REST interface for messages in a database. I was new to RESTful webservices, so I decided to try creating one. This webservice is most likely a level 2 in the Richardson Maturity Model. I used different URIs for every resource to comply with level 1 and I made use of the HTTP verbs PUT, POST, GET, DELETE to comply with level 2. However, I did not use HATEOAS, so it is not level 3 compliant."
       ],
@@ -35,7 +35,7 @@
    },
    {  
       "title":"Connect 4",
-      "time":"December 2014",
+      "time":"November 2014",
       "description":[  
          "This game was written in javascript and its main feature is the AI. The AI uses negamax, which is a variant of the misnimax algorithm. Minimax is a backtracking algorithm that can be used in many two player board games. The basic idea of minimax is to search for a player's largest value that the player can be sure to get without knowing the other player's actions. It guesses the other player's move by getting the largest value for that player. In a way, the best option for one player can be interpreted as the worst option for the opponent.",
          "The complexity is exponential because at every recursive step, it tries to evaluate every possible move. The main optimization I used is alpha-beta pruning, where some moves are pruned because they will not give an optimal result mathematically. Similar to how human players discard the possibility of a move because they know that it will not be the best.",
@@ -57,7 +57,7 @@
    },
    {  
       "title":"MozStumbler",
-      "time":"October 2014",
+      "time":"November 2014",
       "description":[  
          "For this project I worked in a group of three to create the widget. The user will be able to add the widget in the home screen and it will display the number of WiFi access points and cell towers it sees. The app had services to turn on and off the scanning function, so we only needed to make the widget use that service. The toggle button is an image with a click listener."
       ],
@@ -102,7 +102,7 @@
    },
    {  
       "title":"Electromagnetic Tether Robot",
-      "time":"February 2014",
+      "time":"March 2014",
       "description":[  
          "For this project, I worked in a group of 5 students. The project consisted of the robot itself and the beacon. The beacon had two big inductors that produced electromagnetic signals. The robot had inductors that received these signals and produced a voltage. The closer the beacon was to the robot, the higher this voltage becomes. With the two inductors, the robot could process the two voltages and determine which directon the beacon was and how close. With these, we added some logic in the robot's microcontroller to move the motors accordingly."
       ],
@@ -119,7 +119,7 @@
    },
    {  
       "title":"Others",
-      "time":"December 2013",
+      "time":"June 2013",
       "description":[  
          "More personal projects"
       ],
