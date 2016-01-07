@@ -29,8 +29,7 @@
       "github_url": "https://github.com/cweny/InstMsg",
       "accomplishments":[  
          "Developed a REST web service with JAX-RS and JDBC to manage messages in a database",
-         "Supported CRUD operations in a MySQL database with http methods: GET, POST, PUT, DELETE",
-         "Utilized Postman extension in Google Chrome to test the API"
+         "Supported CRUD operations in a MySQL database with http methods: GET, POST, PUT, DELETE"
       ]
    },
    {  
@@ -70,8 +69,8 @@
       "github": false,
       "github_url": "",
       "accomplishments":[  
-         "Created an Android widget application to turn on and off the MozStumbler scanning function to improve usability",
-         "Implemented an unsupported toggle button for the android widget"
+         "Created an Android widget application to turn the MozStumbler scanning function on and off",
+         "Implemented an unsupported toggle button for the Android widget"
       ]
    },
    {  
@@ -96,8 +95,7 @@
       "github_url": "https://github.com/cweny/QR-code-app",
       "accomplishments":[  
          "Developed an Android application capable of storing data and displaying it as a QR code resulting in greater knowledge of mobile app development",
-         "Utilized SQLite to store, retrieve, and manage data",
-         "Researched about Android development practices and QR code generation to create a functional application"
+         "Utilized SQLite to store, retrieve, and manage data"
       ]
    },
    {  
